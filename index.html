@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body class="bg-black">
+    <div class="container p-5">
+      <h1 class="text-center fw-bold text-white">
+        <i class="fas fa-pen-to-square"></i> Quiz App
+      </h1>
+      <section id="form" class="bg-white shadow-lg rounded-5 p-5 mt-5 d-block">
+        <div class="form-floating border rounded-2 border-dark mb-4">
+          <select
+            class="form-select border-0 focus-ring focus-ring-dark"
+            id="categoryMenu"
+            aria-label="Floating label select example"
+          >
+            <option selected>Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="19">Science: Mathematics</option>
+            <option value="18">Science: Computers</option>
+            <option value="22">Geography</option>
+          </select>
+          <label for="floatingSelect">Choose Category</label>
+        </div>
+        <div class="form-floating border rounded-2 border-dark mb-4">
+          <select
+            class="form-select border-0 focus-ring focus-ring-dark"
+            id="difficultyOptions"
+            aria-label="Floating label select example"
+          >
+            <option selected>Any Level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <label for="floatingSelect">Choose Difficulty Level</label>
+        </div>
+        <div class="form-floating border rounded-2 border-dark">
+          <input
+            type="number"
+            class="form-control border-0 focus-ring focus-ring-dark"
+            id="questionNumber"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Number Of Question</label>
+        </div>
+        <button
+          id="startQuiz"
+          class="btn btn-dark mt-4 py-2 px-4 rounded-5 w-100 fs-5 d-block text-white"
+        >
+          Start
+        </button>
+      </section>
+
+      <section id="myData" class="bg-white shadow-lg rounded-5 p-5 mt-5 d-none">
+        <div
+          class="d-flex justify-content-between align-items-center mb-3 fw-bold text-secondary"
+        >
+          <p>Entertainment:Video Games</p>
+          <span>1 Of 3</span>
+        </div>
+        <h3 class="text-center fw-bold">
+          What is the most important rules of traffic in our country ?
+        </h3>
+        <div class="row my-4 gy-3">
+          <div class="col-md-6">
+            <span class="btn btn-outline-dark w-100 rounded-3"
+              >Lorem, ipsum dolor.</span
+            >
+          </div>
+          <div class="col-md-6">
+            <span class="btn btn-outline-dark w-100 rounded-3"
+              >Lorem, ipsum dolor.</span
+            >
+          </div>
+          <div class="col-md-6">
+            <span class="btn btn-outline-dark w-100 rounded-3"
+              >Lorem, ipsum dolor.</span
+            >
+          </div>
+          <div class="col-md-6">
+            <span class="btn btn-outline-dark w-100 rounded-3"
+              >Lorem, ipsum dolor.</span
+            >
+          </div>
+        </div>
+        <h2 class="fs-1 fw-bold text-center">Score: 0</h2>
+      </section>
+
+      <section id="finish" class=" bg-white shadow-lg rounded-5 p-5 mt-5 d-none">
+
+      </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
